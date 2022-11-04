@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct MapAnnotationView: View {
-    var location: Location
+    var shelter: Shelter
     @State private var animation: Double = 0.0
+    @State private var showModal: Bool = false
 
     var body: some View {
         ZStack {
@@ -23,16 +24,23 @@ struct MapAnnotationView: View {
                 .scaleEffect(1 + CGFloat(animation))
                 .opacity(1 - animation)
 
-            Image(systemName: location.image)
+            Image(systemName: shelter.icon)
                 .resizable()
                 .scaledToFit()
+                .foregroundColor(.white)
                 .frame(width: 35, height: 35, alignment: .center)
-            .clipShape(Circle())
+                .clipShape(Circle())
         }
         .onAppear {
             withAnimation(Animation.easeOut(duration: 2).repeatForever(autoreverses: false)) {
                 animation = 1
             }
+        }
+        .onTapGesture {
+            showModal.toggle()
+        }
+        .sheet(isPresented: self.$showModal) {
+            ShelterInfoView(shelter: shelter)
         }
     }
 }

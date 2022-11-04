@@ -16,10 +16,12 @@
 		66B038982915944400D6C8AD /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038972915944400D6C8AD /* InfoView.swift */; };
 		66B0389A2915947700D6C8AD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038992915947700D6C8AD /* ProfileView.swift */; };
 		66B0389D291596AA00D6C8AD /* MediumTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B0389C291596AA00D6C8AD /* MediumTile.swift */; };
-		66B038A029159D5E00D6C8AD /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B0389F29159D5E00D6C8AD /* LocationModel.swift */; };
+		66B038A029159D5E00D6C8AD /* ShelterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B0389F29159D5E00D6C8AD /* ShelterModel.swift */; };
 		66B038A229159DAE00D6C8AD /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038A129159DAE00D6C8AD /* MapAnnotationView.swift */; };
 		66B038A529159E4C00D6C8AD /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038A429159E4C00D6C8AD /* CodableBundleExtension.swift */; };
 		66B038A829159F9900D6C8AD /* shelters.json in Resources */ = {isa = PBXBuildFile; fileRef = 66B038A729159F9900D6C8AD /* shelters.json */; };
+		66B038AA2915AE1900D6C8AD /* ShelterInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038A92915AE1900D6C8AD /* ShelterInfoView.swift */; };
+		66B038AC2915AF4100D6C8AD /* ShelterInfoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038AB2915AF4100D6C8AD /* ShelterInfoItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,10 +35,12 @@
 		66B038972915944400D6C8AD /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		66B038992915947700D6C8AD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		66B0389C291596AA00D6C8AD /* MediumTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumTile.swift; sourceTree = "<group>"; };
-		66B0389F29159D5E00D6C8AD /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		66B0389F29159D5E00D6C8AD /* ShelterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelterModel.swift; sourceTree = "<group>"; };
 		66B038A129159DAE00D6C8AD /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 		66B038A429159E4C00D6C8AD /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 		66B038A729159F9900D6C8AD /* shelters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = shelters.json; sourceTree = "<group>"; };
+		66B038A92915AE1900D6C8AD /* ShelterInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelterInfoView.swift; sourceTree = "<group>"; };
+		66B038AB2915AF4100D6C8AD /* ShelterInfoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelterInfoItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 				66B03895291592C000D6C8AD /* SheltersView.swift */,
 				66B038972915944400D6C8AD /* InfoView.swift */,
 				66B038992915947700D6C8AD /* ProfileView.swift */,
+				66B038A92915AE1900D6C8AD /* ShelterInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 			children = (
 				66B0389C291596AA00D6C8AD /* MediumTile.swift */,
 				66B038A129159DAE00D6C8AD /* MapAnnotationView.swift */,
+				66B038AB2915AF4100D6C8AD /* ShelterInfoItemView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -113,7 +119,7 @@
 		66B0389E29159D3300D6C8AD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				66B0389F29159D5E00D6C8AD /* LocationModel.swift */,
+				66B0389F29159D5E00D6C8AD /* ShelterModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -206,11 +212,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				66B03887291590FC00D6C8AD /* ContentView.swift in Sources */,
-				66B038A029159D5E00D6C8AD /* LocationModel.swift in Sources */,
+				66B038AC2915AF4100D6C8AD /* ShelterInfoItemView.swift in Sources */,
+				66B038A029159D5E00D6C8AD /* ShelterModel.swift in Sources */,
 				66B038A229159DAE00D6C8AD /* MapAnnotationView.swift in Sources */,
 				66B03885291590FC00D6C8AD /* KoiraAppApp.swift in Sources */,
 				66B038A529159E4C00D6C8AD /* CodableBundleExtension.swift in Sources */,
 				66B03896291592C000D6C8AD /* SheltersView.swift in Sources */,
+				66B038AA2915AE1900D6C8AD /* ShelterInfoView.swift in Sources */,
 				66B038982915944400D6C8AD /* InfoView.swift in Sources */,
 				66B0389D291596AA00D6C8AD /* MediumTile.swift in Sources */,
 				66B0389A2915947700D6C8AD /* ProfileView.swift in Sources */,

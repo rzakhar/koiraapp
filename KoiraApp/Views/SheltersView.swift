@@ -13,17 +13,17 @@ struct SheltersView: View {
         center: CLLocationCoordinate2D(latitude: 60.192059, longitude: 24.945831),
         span: MKCoordinateSpan(latitudeDelta: 0.25, longitudeDelta: 0.25))
 
-    @StateObject var locationModel = LocationModel()
+    @StateObject var shelterModel = ShelterModel()
 
     var body: some View {
         NavigationView {
-            Map(coordinateRegion: $coordinateRegion, annotationItems: locationModel.shelters, annotationContent: { item in
+            Map(coordinateRegion: $coordinateRegion, annotationItems: shelterModel.shelters, annotationContent: { item in
                 MapAnnotation(coordinate: item.location) {
-                    MapAnnotationView(location: item)
+                    MapAnnotationView(shelter: item)
                 }
             })
             .task {
-                await self.locationModel.reload()
+                await self.shelterModel.reload()
             }
             .navigationTitle("Shelters")
             .navigationBarTitleDisplayMode(.inline)
