@@ -11,13 +11,22 @@ import MapKit
 struct SheltersView: View {
     @State var coordinateRegion = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 60.192059, longitude: 24.945831),
-        span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
+        span: MKCoordinateSpan(latitudeDelta: 0.25, longitudeDelta: 0.25))
+
+    @StateObject var locationModel = LocationModel()
 
     var body: some View {
         NavigationView {
-            Map(coordinateRegion: $coordinateRegion)
-                .navigationTitle("Shelters")
-                .navigationBarTitleDisplayMode(.inline)
+            Map(coordinateRegion: $coordinateRegion, annotationItems: locationModel.shelters, annotationContent: { item in
+                MapAnnotation(coordinate: item.location) {
+                    MapAnnotationView(location: item)
+                }
+            })
+            .task {
+                await self.locationModel.reload()
+            }
+            .navigationTitle("Shelters")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

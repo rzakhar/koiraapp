@@ -1,0 +1,42 @@
+[
+    {
+      "id" : "hesy",
+      "name" : "HESY ry",
+      "address" : "Muonamiehentie 7 00390 Helsinki",
+      "image" : "house",
+      "latitude" : 60.231120,
+      "longitude" : 24.858370,
+      "phone" : "050 414 0000",
+      "url" : "http://www.hesy.fi/"
+    },
+    {
+      "id" : "viikin",
+      "name" : "Viikin lÃ¶ytÃ¶elÃ¤intalo",
+      "address" : "Koetilantie 13 00790 Helsinki",
+      "image" : "house",
+      "latitude" : 60.222800,
+      "longitude" : 25.021370,
+      "phone" : "040 1980778",
+      "url" : "http://www.hesy.fi/"
+    },
+    {
+      "id" : "rekku",
+      "name" : "Rekku Rescue ry",
+      "address" : "Helsinki, 00530, Hämeentie 10 A 8",
+      "image" : "house",
+      "latitude" : 60.192059,
+      "longitude" : 24.945831,
+      "phone" : "050 414 0000",
+      "url" : "https://rekkurescue.com/"
+    },
+    {
+      "id" : "sey",
+      "name" : "SEY",
+      "address" : "Lintulahdenkatu 1000500 Helsinki",
+      "image" : "house",
+      "latitude" : 60.183890,
+      "longitude" : 24.962170,
+      "phone" : "0207 528 420",
+      "url" : "https://sey.fi/"
+    }
+]

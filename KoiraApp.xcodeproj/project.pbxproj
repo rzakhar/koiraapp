@@ -16,6 +16,10 @@
 		66B038982915944400D6C8AD /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038972915944400D6C8AD /* InfoView.swift */; };
 		66B0389A2915947700D6C8AD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038992915947700D6C8AD /* ProfileView.swift */; };
 		66B0389D291596AA00D6C8AD /* MediumTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B0389C291596AA00D6C8AD /* MediumTile.swift */; };
+		66B038A029159D5E00D6C8AD /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B0389F29159D5E00D6C8AD /* LocationModel.swift */; };
+		66B038A229159DAE00D6C8AD /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038A129159DAE00D6C8AD /* MapAnnotationView.swift */; };
+		66B038A529159E4C00D6C8AD /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038A429159E4C00D6C8AD /* CodableBundleExtension.swift */; };
+		66B038A829159F9900D6C8AD /* shelters.json in Resources */ = {isa = PBXBuildFile; fileRef = 66B038A729159F9900D6C8AD /* shelters.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		66B038972915944400D6C8AD /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		66B038992915947700D6C8AD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		66B0389C291596AA00D6C8AD /* MediumTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumTile.swift; sourceTree = "<group>"; };
+		66B0389F29159D5E00D6C8AD /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		66B038A129159DAE00D6C8AD /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
+		66B038A429159E4C00D6C8AD /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
+		66B038A729159F9900D6C8AD /* shelters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = shelters.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +69,15 @@
 		66B03883291590FC00D6C8AD /* KoiraApp */ = {
 			isa = PBXGroup;
 			children = (
+				66B038A629159F5E00D6C8AD /* Data */,
+				66B038A329159E3600D6C8AD /* Extension */,
 				66B03884291590FC00D6C8AD /* KoiraAppApp.swift */,
 				66B03886291590FC00D6C8AD /* ContentView.swift */,
 				66B03888291590FE00D6C8AD /* Assets.xcassets */,
 				66B0388A291590FE00D6C8AD /* Preview Content */,
 				66B038942915925F00D6C8AD /* Views */,
 				66B0389B2915968900D6C8AD /* Components */,
+				66B0389E29159D3300D6C8AD /* Model */,
 			);
 			path = KoiraApp;
 			sourceTree = "<group>";
@@ -94,8 +105,33 @@
 			isa = PBXGroup;
 			children = (
 				66B0389C291596AA00D6C8AD /* MediumTile.swift */,
+				66B038A129159DAE00D6C8AD /* MapAnnotationView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		66B0389E29159D3300D6C8AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66B0389F29159D5E00D6C8AD /* LocationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		66B038A329159E3600D6C8AD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				66B038A429159E4C00D6C8AD /* CodableBundleExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		66B038A629159F5E00D6C8AD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				66B038A729159F9900D6C8AD /* shelters.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66B038A829159F9900D6C8AD /* shelters.json in Resources */,
 				66B0388C291590FE00D6C8AD /* Preview Assets.xcassets in Resources */,
 				66B03889291590FE00D6C8AD /* Assets.xcassets in Resources */,
 			);
@@ -169,7 +206,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				66B03887291590FC00D6C8AD /* ContentView.swift in Sources */,
+				66B038A029159D5E00D6C8AD /* LocationModel.swift in Sources */,
+				66B038A229159DAE00D6C8AD /* MapAnnotationView.swift in Sources */,
 				66B03885291590FC00D6C8AD /* KoiraAppApp.swift in Sources */,
+				66B038A529159E4C00D6C8AD /* CodableBundleExtension.swift in Sources */,
 				66B03896291592C000D6C8AD /* SheltersView.swift in Sources */,
 				66B038982915944400D6C8AD /* InfoView.swift in Sources */,
 				66B0389D291596AA00D6C8AD /* MediumTile.swift in Sources */,
