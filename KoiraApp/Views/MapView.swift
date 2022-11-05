@@ -29,7 +29,7 @@ struct MapView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbarBackground(
-                Color.accentColor,
+                Color("NavBarColor"),
                 for: .navigationBar)
         }
     }

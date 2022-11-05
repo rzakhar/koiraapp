@@ -14,7 +14,7 @@ struct MediumTile: View {
     var body: some View {
         ZStack(alignment: .leading) {
             RoundedRectangle(cornerRadius: 16)
-                .foregroundColor(.init("AppOrange"))
+                .foregroundColor(.accentColor)
             VStack(spacing: 0) {
                 Text(title)
                     .foregroundColor(.black)

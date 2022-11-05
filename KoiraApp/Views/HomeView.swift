@@ -45,7 +45,7 @@ struct HomeView: View {
             .navigationTitle("KoiraApp")
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbarBackground(
-                Color.accentColor,
+                Color("NavBarColor"),
                 for: .navigationBar)
         }
     }

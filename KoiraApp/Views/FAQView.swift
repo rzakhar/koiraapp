@@ -21,7 +21,7 @@ struct FAQView: View {
             .padding(.horizontal, 20)
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbarBackground(
-                Color.accentColor,
+                Color("NavBarColor"),
                 for: .navigationBar)
         }
         .task {
