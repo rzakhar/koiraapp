@@ -20,19 +20,25 @@ struct DogInfoView: View {
                     }
 
                     TabView {
-                        ForEach(dog.images) { image in
-                            AsyncImage(url: URL(string: backendURL + image.url)) { image in
-                                image
+                        ForEach(dog.images) { blurhachedImage in
+                            AsyncImage(url: URL(string: backendURL + blurhachedImage.url)) { innerImage in
+                                innerImage
                                     .resizable()
                                     .scaledToFill()
                                     .clipped()
                             } placeholder: {
-                                Color.gray
+                                if let uiImage = UIImage(blurHash: blurhachedImage.blurhash, size: CGSize(width: 100, height: 100)) {
+                                    Image(uiImage: uiImage)
+                                        .resizable()
+                                } else {
+                                    Color(.gray)
+                                }
                             }
                             .frame(height: 200, alignment: .center)
                             .cornerRadius(16)
                             .padding()
                         }
+
                     }
                     .tabViewStyle(PageTabViewStyle())
                     .frame(height: 200)

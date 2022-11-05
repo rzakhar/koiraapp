@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ShelterInfoView: View {
     var shelter: Shelter
@@ -22,17 +23,21 @@ struct ShelterInfoView: View {
                 Spacer()
             }
 
-            if let imageURL = shelter.image_url {
-                AsyncImage(url: URL(string: backendURL + imageURL)) { image in
+            if let image = shelter.image {
+                AsyncImage(url: URL(string: backendURL + image.url)) { image in
                     image
                         .resizable()
                         .scaledToFill()
-                        .frame(width: UIScreen.main.bounds.size.width, height: 300, alignment: .center)
                         .clipped()
                 } placeholder: {
-                    Color.gray
-                        .frame(width: UIScreen.main.bounds.size.width, height: 300, alignment: .center)
+                    if let uiImage = UIImage(blurHash: image.blurhash, size: CGSize(width: 100, height: 100)) {
+                        Image(uiImage: uiImage)
+                            .resizable()
+                    } else {
+                        Color(.gray)
+                    }
                 }
+                .frame(width: UIScreen.main.bounds.size.width, height: 300, alignment: .center)
             }
 
             VStack(alignment: .leading) {

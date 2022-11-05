@@ -28,6 +28,7 @@
 		66B038B42916654A00D6C8AD /* BackendSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038B32916654A00D6C8AD /* BackendSettings.swift */; };
 		66B038B62916690800D6C8AD /* DogInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038B52916690800D6C8AD /* DogInfoView.swift */; };
 		66B038B929169BB400D6C8AD /* BlurHashDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038B829169BB300D6C8AD /* BlurHashDecode.swift */; };
+		66B038BB29169BEB00D6C8AD /* BlurHashedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038BA29169BEB00D6C8AD /* BlurHashedImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		66B038B52916690800D6C8AD /* DogInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogInfoView.swift; sourceTree = "<group>"; };
 		66B038B72916764100D6C8AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		66B038B829169BB300D6C8AD /* BlurHashDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurHashDecode.swift; sourceTree = "<group>"; };
+		66B038BA29169BEB00D6C8AD /* BlurHashedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurHashedImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,7 @@
 				66B0388A291590FE00D6C8AD /* Preview Content */,
 				66B038942915925F00D6C8AD /* Views */,
 				66B0389B2915968900D6C8AD /* Components */,
-				66B0389E29159D3300D6C8AD /* Model */,
+				66B0389E29159D3300D6C8AD /* Models */,
 			);
 			path = KoiraApp;
 			sourceTree = "<group>";
@@ -132,13 +134,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		66B0389E29159D3300D6C8AD /* Model */ = {
+		66B0389E29159D3300D6C8AD /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				66B0389F29159D5E00D6C8AD /* ShelterModel.swift */,
 				66B038AD2916614100D6C8AD /* DogModel.swift */,
+				66B038BA29169BEB00D6C8AD /* BlurHashedImage.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		66B038A329159E3600D6C8AD /* Extension */ = {
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66B03887291590FC00D6C8AD /* ContentView.swift in Sources */,
+				66B038BB29169BEB00D6C8AD /* BlurHashedImage.swift in Sources */,
 				66B038AC2915AF4100D6C8AD /* ShelterInfoItemView.swift in Sources */,
 				66B038A029159D5E00D6C8AD /* ShelterModel.swift in Sources */,
 				66B038A229159DAE00D6C8AD /* MapAnnotationView.swift in Sources */,
