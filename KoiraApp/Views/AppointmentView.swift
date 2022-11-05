@@ -23,7 +23,7 @@ struct AppointmentView: View {
                 }
             }
             .padding(.horizontal, 20)
-            .navigationTitle("Appointment")
+            .navigationTitle("KoiraApp")
         }
     }
 }
