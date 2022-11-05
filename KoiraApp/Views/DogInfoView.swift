@@ -36,7 +36,6 @@ struct DogInfoView: View {
                 .tabViewStyle(PageTabViewStyle())
                 .frame(height: 200)
 
-
                 if let birthdate = dog.birthdate {
                     Text(birthdate)
                 }

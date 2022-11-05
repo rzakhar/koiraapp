@@ -11,12 +11,13 @@ struct ShelterInfoView: View {
     var shelter: Shelter
 
     var body: some View {
-        VStack(alignment: .leading) {
+        ScrollView(showsIndicators: false) {
             HStack {
                 Spacer()
-                
+
                 Text(shelter.name)
                     .font(.largeTitle)
+                    .padding(.vertical, 35)
 
                 Spacer()
             }
@@ -48,6 +49,11 @@ struct ShelterInfoView: View {
                 }
             }
             .padding()
+
+            ForEach(shelter.dogs) { dog in
+                DogItemView(dog: dog)
+                    .padding(.horizontal, 20)
+            }
         }
     }
 }

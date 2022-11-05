@@ -24,7 +24,7 @@ struct ShelterInfoItemView: View {
                         .frame(width: 30, height: 30)
                 }
                 .frame(width: 50, height: 50)
-                .padding(.trailing, 40)
+                .padding(.trailing, 30)
 
                 Text(text)
             }

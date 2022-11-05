@@ -10,8 +10,8 @@ import MapKit
 @MainActor
 class ShelterModel: ObservableObject {
     @Published var shelters: [Shelter] = []
-    var safeShelters : [Shelter] = Bundle.main.decode("shelters.json")
-    
+    var safeShelters: [Shelter] = Bundle.main.decode("shelters.json")
+
     func reload() async {
         let url = URL(string: backendURL + "shelters")!
         let urlSession = URLSession.shared
@@ -38,6 +38,7 @@ struct Shelter: Codable, Identifiable {
     var longitude: Double
     var phone: String?
     var url: String?
+    var dogs: [Dog]
 
     var location: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
