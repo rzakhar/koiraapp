@@ -36,6 +36,7 @@ struct DogItemView: View {
             .frame(width: 150, height: 40)
         }
         .frame(height: 200)
+        .padding(.vertical, 10)
         .onTapGesture {
             showModal.toggle()
         }

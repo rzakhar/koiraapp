@@ -29,7 +29,7 @@ struct MapAnnotationView: View {
                 .scaledToFit()
                 .foregroundColor(.white)
                 .frame(width: 35, height: 35, alignment: .center)
-                .clipShape(Circle())
+                .zIndex(1)
         }
         .onAppear {
             withAnimation(Animation.easeOut(duration: 2).repeatForever(autoreverses: false)) {

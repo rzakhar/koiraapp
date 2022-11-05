@@ -10,57 +10,78 @@ import SwiftUI
 struct DogInfoView: View {
     var dog: Dog
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            VStack {
+        ZStack(alignment: .bottom) {
+            ScrollView(showsIndicators: false) {
                 VStack {
-                    Text(dog.name)
-                        .font(.largeTitle)
-                        .padding(.top, 35)
-                }
+                    VStack {
+                        Text(dog.name)
+                            .font(.largeTitle)
+                            .padding(.top, 35)
+                    }
 
-                TabView {
-                    ForEach(dog.images) { image in
-                        AsyncImage(url: URL(string: backendURL + image.url)) { image in
-                            image
-                                .resizable()
-                                .scaledToFill()
-                                .clipped()
-                        } placeholder: {
-                            Color.gray
+                    TabView {
+                        ForEach(dog.images) { image in
+                            AsyncImage(url: URL(string: backendURL + image.url)) { image in
+                                image
+                                    .resizable()
+                                    .scaledToFill()
+                                    .clipped()
+                            } placeholder: {
+                                Color.gray
+                            }
+                            .frame(height: 200, alignment: .center)
+                            .cornerRadius(16)
+                            .padding()
                         }
-                        .frame(height: 200, alignment: .center)
-                        .cornerRadius(16)
-                        .padding()
                     }
-                }
-                .tabViewStyle(PageTabViewStyle())
-                .frame(height: 200)
+                    .tabViewStyle(PageTabViewStyle())
+                    .frame(height: 200)
 
-                if let birthdate = dog.birthdate {
-                    Text(birthdate)
-                }
+                    HStack {
+                        if let sex = dog.sex {
+                            Text(sex.capitalized)
+                        }
 
-                HStack {
-                    if let sex = dog.sex {
-                        Text(sex.capitalized)
+                        Image(systemName: "pawprint")
+                            .foregroundColor(.accentColor)
+
+                        if let species = dog.species {
+                            Text(species)
+                        }
+                    }
+                    .font(.title2)
+                    .padding(.top, 20)
+
+                    if let birthdate = dog.birthdate {
+                        Text("Born " + birthdate)
                     }
 
-                    if let species = dog.species {
-                        Text(species)
+                    if let description = dog.description {
+                        Text(description)
+                            .padding()
+                            .padding(.bottom, 70)
                     }
-                }
 
-                Image(systemName: "pawprint")
-                    .resizable()
-                    .foregroundColor(.accentColor)
-                    .scaledToFit()
-                    .frame(width: 80, height: 80)
-
-                if let description = dog.description {
-                    Text(description)
-                        .padding()
                 }
             }
+
+            Button {
+                print("!23")
+            } label: {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 300)
+                        .foregroundColor(.accentColor)
+                    HStack {
+                        Image(systemName: "calendar.badge.plus")
+                            .foregroundColor(.white)
+                        Text("Pay a visit")
+                            .foregroundColor(.white)
+                    }
+                }
+            }
+            .frame(height: 50)
+            .padding(.horizontal, 40)
+            .padding(.bottom, 10)
         }
     }
 }

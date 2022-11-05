@@ -23,7 +23,7 @@ struct ShelterInfoView: View {
             }
 
             if let imageURL = shelter.image_url {
-                AsyncImage(url: URL(string: imageURL)) { image in
+                AsyncImage(url: URL(string: backendURL + imageURL)) { image in
                     image
                         .resizable()
                         .scaledToFill()

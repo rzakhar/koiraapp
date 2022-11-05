@@ -10,22 +10,22 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            AppointmentView()
+            MapView()
                 .tabItem {
-                    Image(systemName: "calendar.badge.plus")
-                    Text("Appointment")
-                }
-
-            SheltersView()
-                .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("Shelters")
+                    Image(systemName: "map.fill")
+                    Text("Map")
                 }
 
             InfoView()
                 .tabItem {
                     Image(systemName: "book")
                     Text("Info")
+                }
+
+            AppointmentView()
+                .tabItem {
+                    Image(systemName: "calendar.badge.plus")
+                    Text("Appointment")
                 }
 
             ProfileView()

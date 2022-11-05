@@ -15,9 +15,6 @@ struct ShelterInfoItemView: View {
         ZStack {
             HStack {
                 ZStack {
-                    Circle()
-                        .foregroundColor(Color.white)
-
                     Image(systemName: image)
                         .resizable()
                         .scaledToFit()

@@ -12,7 +12,7 @@
 		66B03889291590FE00D6C8AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66B03888291590FE00D6C8AD /* Assets.xcassets */; };
 		66B0388C291590FE00D6C8AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66B0388B291590FE00D6C8AD /* Preview Assets.xcassets */; };
 		66B038932915925500D6C8AD /* AppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038922915925400D6C8AD /* AppointmentView.swift */; };
-		66B03896291592C000D6C8AD /* SheltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B03895291592C000D6C8AD /* SheltersView.swift */; };
+		66B03896291592C000D6C8AD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B03895291592C000D6C8AD /* MapView.swift */; };
 		66B038982915944400D6C8AD /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038972915944400D6C8AD /* InfoView.swift */; };
 		66B0389A2915947700D6C8AD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038992915947700D6C8AD /* ProfileView.swift */; };
 		66B0389D291596AA00D6C8AD /* MediumTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B0389C291596AA00D6C8AD /* MediumTile.swift */; };
@@ -27,6 +27,7 @@
 		66B038B22916645B00D6C8AD /* dogs.json in Resources */ = {isa = PBXBuildFile; fileRef = 66B038B12916645B00D6C8AD /* dogs.json */; };
 		66B038B42916654A00D6C8AD /* BackendSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038B32916654A00D6C8AD /* BackendSettings.swift */; };
 		66B038B62916690800D6C8AD /* DogInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038B52916690800D6C8AD /* DogInfoView.swift */; };
+		66B038B929169BB400D6C8AD /* BlurHashDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038B829169BB300D6C8AD /* BlurHashDecode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +37,7 @@
 		66B03888291590FE00D6C8AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66B0388B291590FE00D6C8AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		66B038922915925400D6C8AD /* AppointmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentView.swift; sourceTree = "<group>"; };
-		66B03895291592C000D6C8AD /* SheltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheltersView.swift; sourceTree = "<group>"; };
+		66B03895291592C000D6C8AD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		66B038972915944400D6C8AD /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		66B038992915947700D6C8AD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		66B0389C291596AA00D6C8AD /* MediumTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumTile.swift; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		66B038B32916654A00D6C8AD /* BackendSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendSettings.swift; sourceTree = "<group>"; };
 		66B038B52916690800D6C8AD /* DogInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogInfoView.swift; sourceTree = "<group>"; };
 		66B038B72916764100D6C8AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		66B038B829169BB300D6C8AD /* BlurHashDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurHashDecode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				66B038922915925400D6C8AD /* AppointmentView.swift */,
-				66B03895291592C000D6C8AD /* SheltersView.swift */,
+				66B03895291592C000D6C8AD /* MapView.swift */,
 				66B038972915944400D6C8AD /* InfoView.swift */,
 				66B038992915947700D6C8AD /* ProfileView.swift */,
 				66B038A92915AE1900D6C8AD /* ShelterInfoView.swift */,
@@ -153,6 +155,7 @@
 				66B038A729159F9900D6C8AD /* shelters.json */,
 				66B038B12916645B00D6C8AD /* dogs.json */,
 				66B038B32916654A00D6C8AD /* BackendSettings.swift */,
+				66B038B829169BB300D6C8AD /* BlurHashDecode.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -235,7 +238,8 @@
 				66B038A229159DAE00D6C8AD /* MapAnnotationView.swift in Sources */,
 				66B03885291590FC00D6C8AD /* KoiraAppApp.swift in Sources */,
 				66B038A529159E4C00D6C8AD /* CodableBundleExtension.swift in Sources */,
-				66B03896291592C000D6C8AD /* SheltersView.swift in Sources */,
+				66B03896291592C000D6C8AD /* MapView.swift in Sources */,
+				66B038B929169BB400D6C8AD /* BlurHashDecode.swift in Sources */,
 				66B038AA2915AE1900D6C8AD /* ShelterInfoView.swift in Sources */,
 				66B038B42916654A00D6C8AD /* BackendSettings.swift in Sources */,
 				66B038B02916620200D6C8AD /* DogItemView.swift in Sources */,
