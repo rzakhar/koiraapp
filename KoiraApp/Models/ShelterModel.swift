@@ -10,10 +10,10 @@ import MapKit
 @MainActor
 class ShelterModel: ObservableObject {
     @Published var shelters: [Shelter] = []
-    var safeShelters: [Shelter] = Bundle.main.decode("shelters.json")
+    var safeShelters: [Shelter] = Bundle.main.decode("locations.json")
 
     func reload() async {
-        let url = URL(string: backendURL + "shelters")!
+        let url = URL(string: backendURL + "locations")!
         let urlSession = URLSession.shared
 
         do {
