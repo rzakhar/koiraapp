@@ -11,16 +11,18 @@ struct QuestionView: View {
     var question: Question
 
     var body: some View {
-        VStack {
+        VStack(alignment: .center) {
+            Image(systemName: "questionmark")
+
             HStack(alignment: .top) {
-                Image(systemName: "questionmark")
                 Text(question.question)
                 Spacer()
             }
             .font(.title2)
 
+            Image(systemName: "checkmark")
+            
             HStack(alignment: .top) {
-                Image(systemName: "checkmark")
                 Text(question.answer)
                 Spacer()
             }
