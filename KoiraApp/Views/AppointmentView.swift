@@ -11,7 +11,7 @@ struct AppointmentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Spacer()
+                Text("Welcome to the Dog world").font(.headline)
                 MediumTile(title: "Dogs at Therapy?", imageName: "DogTherapy")
                 HStack {
                     MediumTile(title: "For future pet owners", imageName: "FuturePetOwners")
@@ -24,6 +24,11 @@ struct AppointmentView: View {
             }
             .padding(.horizontal, 20)
             .navigationTitle("KoiraApp")
+            .toolbarBackground(.visible, for: .navigationBar)
+            .toolbarBackground(
+                Color.accentColor,
+                for: .navigationBar)
+            
         }
     }
 }
