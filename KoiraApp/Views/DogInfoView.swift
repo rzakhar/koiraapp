@@ -12,9 +12,15 @@ struct DogInfoView: View {
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack {
-                ScrollView(.horizontal) {
-                    List(dog.images, id: \.self) { image in
-                        AsyncImage(url: URL(string: backendURL + image)) { image in
+                VStack {
+                    Text(dog.name)
+                        .font(.largeTitle)
+                        .padding(.top, 35)
+                }
+
+                TabView {
+                    ForEach(dog.images) { image in
+                        AsyncImage(url: URL(string: backendURL + image.url)) { image in
                             image
                                 .resizable()
                                 .scaledToFill()
@@ -24,11 +30,38 @@ struct DogInfoView: View {
                         }
                         .frame(height: 200, alignment: .center)
                         .cornerRadius(16)
+                        .padding()
                     }
                 }
+                .tabViewStyle(PageTabViewStyle())
+                .frame(height: 200)
+
+
+                if let birthdate = dog.birthdate {
+                    Text(birthdate)
+                }
+
+                HStack {
+                    if let sex = dog.sex {
+                        Text(sex.capitalized)
+                    }
+
+                    if let species = dog.species {
+                        Text(species)
+                    }
+                }
+
+                Image(systemName: "pawprint")
+                    .resizable()
+                    .foregroundColor(.accentColor)
+                    .scaledToFit()
+                    .frame(width: 80, height: 80)
+
+                if let description = dog.description {
+                    Text(description)
+                        .padding()
+                }
             }
-            Text(dog.name)
-                .font(.largeTitle)
         }
     }
 }

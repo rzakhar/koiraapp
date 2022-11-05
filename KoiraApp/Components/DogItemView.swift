@@ -13,7 +13,7 @@ struct DogItemView: View {
 
     var body: some View {
         ZStack(alignment: .bottomLeading) {
-            if let imageURL = dog.images.first! {
+            if let imageURL = dog.images.first!.url {
                 AsyncImage(url: URL(string: backendURL + imageURL)) { image in
                     image
                         .resizable()

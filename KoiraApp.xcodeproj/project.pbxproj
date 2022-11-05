@@ -51,6 +51,7 @@
 		66B038B12916645B00D6C8AD /* dogs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dogs.json; sourceTree = "<group>"; };
 		66B038B32916654A00D6C8AD /* BackendSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendSettings.swift; sourceTree = "<group>"; };
 		66B038B52916690800D6C8AD /* DogInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogInfoView.swift; sourceTree = "<group>"; };
+		66B038B72916764100D6C8AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 		66B03883291590FC00D6C8AD /* KoiraApp */ = {
 			isa = PBXGroup;
 			children = (
+				66B038B72916764100D6C8AD /* Info.plist */,
 				66B038A629159F5E00D6C8AD /* Data */,
 				66B038A329159E3600D6C8AD /* Extension */,
 				66B03884291590FC00D6C8AD /* KoiraAppApp.swift */,
@@ -374,6 +376,7 @@
 				DEVELOPMENT_TEAM = ZRJ5F4YWW9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KoiraApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -403,6 +406,7 @@
 				DEVELOPMENT_TEAM = ZRJ5F4YWW9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KoiraApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
