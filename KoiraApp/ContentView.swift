@@ -12,7 +12,7 @@ struct ContentView: View {
 
     var body: some View {
         TabView(selection: $tabSelection) {
-            AppointmentView(tabSelection: $tabSelection)
+            HomeView(tabSelection: $tabSelection)
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("Home")
@@ -26,7 +26,7 @@ struct ContentView: View {
                 }
                 .tag(2)
 
-            InfoView()
+            OurPetsView()
                 .tabItem {
                     Image(systemName: "pawprint.fill")
                     Text("Our Pets")
