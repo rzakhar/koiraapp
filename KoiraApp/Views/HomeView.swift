@@ -13,7 +13,9 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Welcome to the Dog world").font(.headline)
+                Text("Welcome to the Dog world")
+                    .font(.title3)
+
                 MediumTile(title: "Dogs at Therapy?", imageName: "DogTherapy")
                     .onTapGesture {
                         tabSelection = 4

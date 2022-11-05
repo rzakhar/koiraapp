@@ -13,15 +13,23 @@ struct QuestionView: View {
     var body: some View {
         VStack(alignment: .center) {
             Image(systemName: "questionmark")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 30, height: 30)
+                .padding(.top, 20)
+                .foregroundColor(.accentColor)
 
-            HStack(alignment: .top) {
-                Text(question.question)
-                Spacer()
-            }
-            .font(.title2)
+            Text(question.question)
+                .multilineTextAlignment(.center)
+                .font(.title2)
+                .fontWeight(.bold)
 
             Image(systemName: "checkmark")
-            
+                .resizable()
+                .scaledToFit()
+                .frame(width: 20, height: 20)
+                .foregroundColor(.green)
+
             HStack(alignment: .top) {
                 Text(question.answer)
                 Spacer()

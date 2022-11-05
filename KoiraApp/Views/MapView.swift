@@ -10,7 +10,7 @@ import MapKit
 
 struct MapView: View {
     @State var coordinateRegion = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 60.192059, longitude: 24.945831),
+        center: CLLocationCoordinate2D(latitude: 60.227977, longitude: 24.944658),
         span: MKCoordinateSpan(latitudeDelta: 0.25, longitudeDelta: 0.25))
 
     @StateObject var shelterModel = ShelterModel()

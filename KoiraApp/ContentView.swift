@@ -22,7 +22,7 @@ struct ContentView: View {
             MapView()
                 .tabItem {
                     Image(systemName: "calendar.badge.plus")
-                    Text("Find shelter")
+                    Text("Shelters")
                 }
                 .tag(2)
 
