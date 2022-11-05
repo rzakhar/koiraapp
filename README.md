@@ -1,5 +1,7 @@
-# koiraapp
-Know more about the dog therapy and find a local shelter!
+# KoiraApp
+* Connect people with pets in the dog shelters
+* Know more about the dog therapy and find a local shelter!
+* Match your pet type
 
 ## Key features
 * Runs on iPhone 8 and later
