@@ -13,8 +13,10 @@ struct InfoView: View {
     var body: some View {
         NavigationView {
             ScrollView(showsIndicators: false) {
-                ForEach(dogModel.dogs) { dog in
-                    DogItemView(dog: dog)
+                LazyVStack {
+                    ForEach(dogModel.dogs) { dog in
+                        DogItemView(dog: dog)
+                    }
                 }
             }
             .navigationTitle("Information")

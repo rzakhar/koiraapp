@@ -55,9 +55,11 @@ struct ShelterInfoView: View {
             }
             .padding()
 
-            ForEach(shelter.dogs) { dog in
-                DogItemView(dog: dog)
-                    .padding(.horizontal, 20)
+            LazyVStack {
+                ForEach(shelter.dogs) { dog in
+                    DogItemView(dog: dog)
+                        .padding(.horizontal, 20)
+                }
             }
         }
     }
