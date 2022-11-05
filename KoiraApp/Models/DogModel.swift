@@ -36,5 +36,5 @@ struct Dog: Codable, Identifiable {
     var sex: String?
     var description: String?
     var shelter_id: String
-    var images: [BlurHashedImage]
+    var images: [BlurHashedImageModel]
 }

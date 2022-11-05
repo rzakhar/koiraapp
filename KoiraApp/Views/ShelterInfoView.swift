@@ -24,20 +24,9 @@ struct ShelterInfoView: View {
             }
 
             if let image = shelter.image {
-                AsyncImage(url: URL(string: backendURL + image.url)) { image in
-                    image
-                        .resizable()
-                        .scaledToFill()
-                } placeholder: {
-                    if let uiImage = UIImage(blurHash: image.blurhash, size: CGSize(width: 100, height: 100)) {
-                        Image(uiImage: uiImage)
-                            .resizable()
-                    } else {
-                        Color(.gray)
-                    }
-                }
-                .frame(width: UIScreen.main.bounds.size.width, height: 300, alignment: .center)
-                .clipped()
+                BlurhashedImage(image: image)
+                    .frame(width: UIScreen.main.bounds.size.width, height: 300, alignment: .center)
+                    .clipped()
             }
 
             VStack(alignment: .leading) {

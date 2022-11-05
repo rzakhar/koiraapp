@@ -33,7 +33,7 @@ struct Shelter: Codable, Identifiable {
     var name: String
     var address: String?
     var icon: String
-    var image: BlurHashedImage?
+    var image: BlurHashedImageModel?
     var latitude: Double
     var longitude: Double
     var phone: String?

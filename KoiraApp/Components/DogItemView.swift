@@ -14,21 +14,9 @@ struct DogItemView: View {
     var body: some View {
         ZStack(alignment: .bottomLeading) {
             if let image = dog.images.first! {
-                AsyncImage(url: URL(string: backendURL + image.url)) { image in
-                    image
-                        .resizable()
-                        .scaledToFill()
-                        .clipped()
-                } placeholder: {
-                    if let uiImage = UIImage(blurHash: image.blurhash, size: CGSize(width: 100, height: 100)) {
-                        Image(uiImage: uiImage)
-                            .resizable()
-                    } else {
-                        Color(.gray)
-                    }
-                }
-                .frame(height: 200, alignment: .center)
-                .cornerRadius(16)
+                BlurhashedImage(image: image)
+                    .frame(height: 200, alignment: .center)
+                    .cornerRadius(16)
             }
             ZStack(alignment: .center) {
                 RoundedRectangle(cornerRadius: 300)
