@@ -10,4 +10,4 @@ Know more about dog therapy and find a local shelter!
 * iPads are supported
 
 ## Demo
-![Demo](/demo.gif "Demo")
+<img src="demo.gif" alt="Demonstration" width="300"/>
