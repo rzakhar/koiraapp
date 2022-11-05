@@ -22,7 +22,7 @@
 ## Demo
 
 *Might take some time to load.* [Open in a new window](demo.gif)<br><br>
-[Figma Design](https://www.figma.com/proto/wKxdAXtXIIcsYLphTmgLAH/KoiraAppPrototype?node-id=22%3A6165&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A4)<br>
+[:triangular_ruler: Figma Design](https://www.figma.com/proto/wKxdAXtXIIcsYLphTmgLAH/KoiraAppPrototype?node-id=22%3A6165&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A4)<br>
 
 <img src="demo.gif" alt="Demonstration" width="300"/>
 
