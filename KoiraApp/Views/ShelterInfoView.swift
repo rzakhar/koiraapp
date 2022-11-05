@@ -28,7 +28,6 @@ struct ShelterInfoView: View {
                     image
                         .resizable()
                         .scaledToFill()
-                        .clipped()
                 } placeholder: {
                     if let uiImage = UIImage(blurHash: image.blurhash, size: CGSize(width: 100, height: 100)) {
                         Image(uiImage: uiImage)
@@ -38,6 +37,7 @@ struct ShelterInfoView: View {
                     }
                 }
                 .frame(width: UIScreen.main.bounds.size.width, height: 300, alignment: .center)
+                .clipped()
             }
 
             VStack(alignment: .leading) {
