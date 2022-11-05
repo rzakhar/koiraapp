@@ -1,5 +1,5 @@
 //
-//  InfoView.swift
+//  ProfileView.swift
 //  KoiraApp
 //
 //  Created by Roman Zakharov on 4.11.2022.
@@ -7,19 +7,17 @@
 
 import SwiftUI
 
-struct InfoView: View {
-    @StateObject var dogModel = DogModel()
+struct FAQView: View {
+    @StateObject var questionModel = QuestionModel()
 
     var body: some View {
         NavigationView {
             ScrollView(showsIndicators: false) {
-                LazyVStack {
-                    ForEach(dogModel.dogs) { dog in
-                        DogItemView(dog: dog)
+                    ForEach(questionModel.questions) { question in
+                        QuestionView(question: question)
                     }
-                }
             }
-            .navigationTitle("Our pets")
+            .navigationTitle("FAQ")
             .padding(.horizontal, 20)
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbarBackground(
@@ -27,13 +25,13 @@ struct InfoView: View {
                 for: .navigationBar)
         }
         .task {
-            await self.dogModel.reload()
+            await self.questionModel.reload()
         }
     }
 }
 
-struct InfoView_Previews: PreviewProvider {
+struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        InfoView()
+        FAQView()
     }
 }

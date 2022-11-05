@@ -28,7 +28,6 @@ struct AppointmentView: View {
             .toolbarBackground(
                 Color.accentColor,
                 for: .navigationBar)
-            
         }
     }
 }

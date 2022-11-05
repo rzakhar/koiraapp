@@ -14,7 +14,7 @@
 		66B038932915925500D6C8AD /* AppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038922915925400D6C8AD /* AppointmentView.swift */; };
 		66B03896291592C000D6C8AD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B03895291592C000D6C8AD /* MapView.swift */; };
 		66B038982915944400D6C8AD /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038972915944400D6C8AD /* InfoView.swift */; };
-		66B0389A2915947700D6C8AD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038992915947700D6C8AD /* ProfileView.swift */; };
+		66B0389A2915947700D6C8AD /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038992915947700D6C8AD /* FAQView.swift */; };
 		66B0389D291596AA00D6C8AD /* MediumTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B0389C291596AA00D6C8AD /* MediumTile.swift */; };
 		66B038A029159D5E00D6C8AD /* ShelterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B0389F29159D5E00D6C8AD /* ShelterModel.swift */; };
 		66B038A229159DAE00D6C8AD /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038A129159DAE00D6C8AD /* MapAnnotationView.swift */; };
@@ -30,6 +30,9 @@
 		66B038B929169BB400D6C8AD /* BlurHashDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038B829169BB300D6C8AD /* BlurHashDecode.swift */; };
 		66B038BB29169BEB00D6C8AD /* BlurHashedImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038BA29169BEB00D6C8AD /* BlurHashedImageModel.swift */; };
 		66B038BD2916C07200D6C8AD /* BlurhashedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038BC2916C07200D6C8AD /* BlurhashedImage.swift */; };
+		66B038BF2916D4A400D6C8AD /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038BE2916D4A400D6C8AD /* QuestionModel.swift */; };
+		66B038C12916D60900D6C8AD /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B038C02916D60900D6C8AD /* QuestionView.swift */; };
+		66B038C32916D6C900D6C8AD /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 66B038C22916D6C900D6C8AD /* questions.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +44,7 @@
 		66B038922915925400D6C8AD /* AppointmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentView.swift; sourceTree = "<group>"; };
 		66B03895291592C000D6C8AD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		66B038972915944400D6C8AD /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
-		66B038992915947700D6C8AD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		66B038992915947700D6C8AD /* FAQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQView.swift; sourceTree = "<group>"; };
 		66B0389C291596AA00D6C8AD /* MediumTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumTile.swift; sourceTree = "<group>"; };
 		66B0389F29159D5E00D6C8AD /* ShelterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelterModel.swift; sourceTree = "<group>"; };
 		66B038A129159DAE00D6C8AD /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
@@ -58,6 +61,9 @@
 		66B038B829169BB300D6C8AD /* BlurHashDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurHashDecode.swift; sourceTree = "<group>"; };
 		66B038BA29169BEB00D6C8AD /* BlurHashedImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurHashedImageModel.swift; sourceTree = "<group>"; };
 		66B038BC2916C07200D6C8AD /* BlurhashedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurhashedImage.swift; sourceTree = "<group>"; };
+		66B038BE2916D4A400D6C8AD /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		66B038C02916D60900D6C8AD /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		66B038C22916D6C900D6C8AD /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +124,7 @@
 				66B038922915925400D6C8AD /* AppointmentView.swift */,
 				66B03895291592C000D6C8AD /* MapView.swift */,
 				66B038972915944400D6C8AD /* InfoView.swift */,
-				66B038992915947700D6C8AD /* ProfileView.swift */,
+				66B038992915947700D6C8AD /* FAQView.swift */,
 				66B038A92915AE1900D6C8AD /* ShelterInfoView.swift */,
 				66B038B52916690800D6C8AD /* DogInfoView.swift */,
 			);
@@ -133,6 +139,7 @@
 				66B038AB2915AF4100D6C8AD /* ShelterInfoItemView.swift */,
 				66B038AF2916620200D6C8AD /* DogItemView.swift */,
 				66B038BC2916C07200D6C8AD /* BlurhashedImage.swift */,
+				66B038C02916D60900D6C8AD /* QuestionView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -142,6 +149,7 @@
 			children = (
 				66B0389F29159D5E00D6C8AD /* ShelterModel.swift */,
 				66B038AD2916614100D6C8AD /* DogModel.swift */,
+				66B038BE2916D4A400D6C8AD /* QuestionModel.swift */,
 				66B038BA29169BEB00D6C8AD /* BlurHashedImageModel.swift */,
 			);
 			path = Models;
@@ -160,6 +168,7 @@
 			children = (
 				66B038A729159F9900D6C8AD /* locations.json */,
 				66B038B12916645B00D6C8AD /* dogs.json */,
+				66B038C22916D6C900D6C8AD /* questions.json */,
 				66B038B32916654A00D6C8AD /* BackendSettings.swift */,
 				66B038B829169BB300D6C8AD /* BlurHashDecode.swift */,
 			);
@@ -224,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66B038C32916D6C900D6C8AD /* questions.json in Resources */,
 				66B038A829159F9900D6C8AD /* locations.json in Resources */,
 				66B0388C291590FE00D6C8AD /* Preview Assets.xcassets in Resources */,
 				66B038B22916645B00D6C8AD /* dogs.json in Resources */,
@@ -248,6 +258,7 @@
 				66B038A529159E4C00D6C8AD /* CodableBundleExtension.swift in Sources */,
 				66B03896291592C000D6C8AD /* MapView.swift in Sources */,
 				66B038B929169BB400D6C8AD /* BlurHashDecode.swift in Sources */,
+				66B038C12916D60900D6C8AD /* QuestionView.swift in Sources */,
 				66B038AA2915AE1900D6C8AD /* ShelterInfoView.swift in Sources */,
 				66B038B42916654A00D6C8AD /* BackendSettings.swift in Sources */,
 				66B038B02916620200D6C8AD /* DogItemView.swift in Sources */,
@@ -255,8 +266,9 @@
 				66B0389D291596AA00D6C8AD /* MediumTile.swift in Sources */,
 				66B038AE2916614100D6C8AD /* DogModel.swift in Sources */,
 				66B038B62916690800D6C8AD /* DogInfoView.swift in Sources */,
-				66B0389A2915947700D6C8AD /* ProfileView.swift in Sources */,
+				66B0389A2915947700D6C8AD /* FAQView.swift in Sources */,
 				66B038932915925500D6C8AD /* AppointmentView.swift in Sources */,
+				66B038BF2916D4A400D6C8AD /* QuestionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

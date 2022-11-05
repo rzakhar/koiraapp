@@ -27,6 +27,10 @@ struct MapView: View {
             }
             .navigationTitle("Shelters & Dog Owners")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbarBackground(.visible, for: .navigationBar)
+            .toolbarBackground(
+                Color.accentColor,
+                for: .navigationBar)
         }
     }
 }
