@@ -12,18 +12,18 @@ struct AppointmentView: View {
         NavigationView {
             VStack {
                 Spacer()
-                MediumTile(title: "Our shelters", imageName: "house")
+                MediumTile(title: "Dogs at Therapy?", imageName: "DogTherapy")
                 HStack {
-                    MediumTile(title: "Our shelters", imageName: "house")
-                    MediumTile(title: "Our shelters", imageName: "house")
+                    MediumTile(title: "For future pet owners", imageName: "FuturePetOwners")
+                    MediumTile(title: "Book Time", imageName: "PawCalendar")
                 }
                 HStack {
-                    MediumTile(title: "Our shelters", imageName: "house")
-                    MediumTile(title: "Our shelters", imageName: "house")
+                    MediumTile(title: "Our shelters", imageName: "DogHome")
+                    MediumTile(title: "Find the Dog for You", imageName: "PhoneHand")
                 }
             }
             .padding(.horizontal, 20)
-            .navigationTitle("Appointment")
+            .navigationTitle("KoiraApp")
         }
     }
 }
