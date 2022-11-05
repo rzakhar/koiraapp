@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct DogInfoView: View {
+    @Environment(\.presentationMode) var presentationMode
     var dog: Dog
+
     var body: some View {
         ZStack(alignment: .bottom) {
             ScrollView(showsIndicators: false) {
@@ -76,6 +78,20 @@ struct DogInfoView: View {
             .frame(height: 50)
             .padding(.horizontal, 40)
             .padding(.bottom, 10)
+        }
+        .overlay(alignment: .topTrailing) {
+            Button(action: {
+                self.presentationMode.wrappedValue.dismiss()
+            }, label: {
+                ZStack {
+                    Circle()
+                        .foregroundColor(.accentColor)
+                    Image(systemName: "xmark")
+                        .foregroundColor(.white)
+                }
+            })
+            .frame(width: 40, height: 40)
+            .padding(.all, 30)
         }
     }
 }

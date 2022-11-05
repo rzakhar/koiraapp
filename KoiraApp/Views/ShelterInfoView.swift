@@ -9,6 +9,7 @@ import SwiftUI
 import UIKit
 
 struct ShelterInfoView: View {
+    @Environment(\.presentationMode) var presentationMode
     var shelter: Shelter
 
     var body: some View {
@@ -50,6 +51,20 @@ struct ShelterInfoView: View {
                         .padding(.horizontal, 20)
                 }
             }
+        }
+        .overlay(alignment: .topTrailing) {
+            Button(action: {
+                self.presentationMode.wrappedValue.dismiss()
+            }, label: {
+                ZStack {
+                    Circle()
+                        .foregroundColor(.accentColor)
+                    Image(systemName: "xmark")
+                        .foregroundColor(.white)
+                }
+            })
+            .frame(width: 40, height: 40)
+            .padding(.all, 30)
         }
     }
 }
