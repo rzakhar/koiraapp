@@ -14,13 +14,13 @@ struct MediumTile: View {
     var body: some View {
         ZStack(alignment: .leading) {
             RoundedRectangle(cornerRadius: 16)
-                .foregroundColor(.accentColor)
+                .foregroundColor(.init("AppOrange"))
             VStack {
                 Text(title)
                     .foregroundColor(.black)
                     .padding(.all, 16)
 
-                Image(systemName: imageName)
+                Image(imageName)
                     .resizable()
                     .scaledToFit()
                     .foregroundColor(.black)
