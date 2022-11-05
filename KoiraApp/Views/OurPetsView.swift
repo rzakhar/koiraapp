@@ -19,7 +19,9 @@ struct OurPetsView: View {
                     }
                 }
             }
+            .frame(maxWidth: 600)
             .navigationTitle("Our pets")
+            .navigationViewStyle(StackNavigationViewStyle())
             .padding(.horizontal, 20)
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbarBackground(

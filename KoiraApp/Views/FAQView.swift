@@ -17,7 +17,9 @@ struct FAQView: View {
                         QuestionView(question: question)
                     }
             }
+            .frame(maxWidth: 600)
             .navigationTitle("FAQ")
+            .navigationViewStyle(StackNavigationViewStyle())
             .padding(.horizontal, 20)
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbarBackground(

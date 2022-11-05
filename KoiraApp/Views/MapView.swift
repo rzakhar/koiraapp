@@ -26,6 +26,7 @@ struct MapView: View {
                 await self.shelterModel.reload()
             }
             .navigationTitle("Shelters & Dog Owners")
+            .navigationViewStyle(StackNavigationViewStyle())
             .navigationBarTitleDisplayMode(.inline)
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbarBackground(

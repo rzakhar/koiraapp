@@ -12,7 +12,7 @@ struct HomeView: View {
 
     var body: some View {
         NavigationView {
-            VStack {
+            ScrollView(showsIndicators: false) {
                 Text("Welcome to the Dog world")
                     .font(.title3)
 
@@ -41,8 +41,10 @@ struct HomeView: View {
                         }
                 }
             }
+            .frame(maxWidth: 600)
             .padding(.horizontal, 20)
             .navigationTitle("KoiraApp")
+            .navigationViewStyle(StackNavigationViewStyle())
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbarBackground(
                 Color("NavBarColor"),
