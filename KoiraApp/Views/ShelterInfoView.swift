@@ -51,3 +51,9 @@ struct ShelterInfoView: View {
         }
     }
 }
+
+struct ShelterInfoView_Previews: PreviewProvider {
+    static var previews: some View {
+        ShelterInfoView(shelter: ShelterModel().safeShelters.first!)
+    }
+}

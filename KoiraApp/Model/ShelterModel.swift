@@ -10,9 +10,10 @@ import MapKit
 @MainActor
 class ShelterModel: ObservableObject {
     @Published var shelters: [Shelter] = []
-
+    var safeShelters : [Shelter] = Bundle.main.decode("shelters.json")
+    
     func reload() async {
-        let url = URL(string: "http://10.84.113.129:3000/shelters")!
+        let url = URL(string: backendURL + "shelters")!
         let urlSession = URLSession.shared
 
         do {
@@ -22,6 +23,7 @@ class ShelterModel: ObservableObject {
             // Error handling in case the data couldn't be loaded
             // For now, only display the error on the console
             debugPrint("Error loading \(url): \(String(describing: error))")
+            self.shelters = self.safeShelters
         }
     }
 }

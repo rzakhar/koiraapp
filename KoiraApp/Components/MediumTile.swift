@@ -35,5 +35,6 @@ struct MediumTile: View {
 struct MediumTile_Previews: PreviewProvider {
     static var previews: some View {
         MediumTile(title: "Shelters", imageName: "house")
+            .previewLayout(.sizeThatFits)
     }
 }

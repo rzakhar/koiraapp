@@ -8,10 +8,20 @@
 import SwiftUI
 
 struct InfoView: View {
+    @StateObject var dogModel = DogModel()
+
     var body: some View {
         NavigationView {
-            Text("Info")
-                .navigationTitle("Information")
+            ScrollView(showsIndicators: false) {
+                ForEach(dogModel.dogs) { dog in
+                    DogItemView(dog: dog)
+                }
+            }
+            .navigationTitle("Information")
+            .padding(.horizontal, 20)
+        }
+        .task {
+            await self.dogModel.reload()
         }
     }
 }

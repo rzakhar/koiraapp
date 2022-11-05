@@ -44,3 +44,10 @@ struct MapAnnotationView: View {
         }
     }
 }
+
+struct MapAnnotationView_Previews: PreviewProvider {
+    static var previews: some View {
+        MapAnnotationView(shelter: ShelterModel().safeShelters.first!)
+            .previewLayout(.sizeThatFits)
+    }
+}
