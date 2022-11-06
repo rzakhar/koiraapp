@@ -13,9 +13,20 @@ struct FAQView: View {
     var body: some View {
         NavigationView {
             ScrollView(showsIndicators: false) {
-                    ForEach(questionModel.questions) { question in
-                        QuestionView(question: question)
+                if let url = URL(string: googleURL) {
+                    Link (destination: url) {
+                        Image(systemName: "arkit")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 40, height: 40)
+                        Text("See different dogs in the AR")
+                            .font(.title2)
                     }
+                    .padding()
+                }
+                ForEach(questionModel.questions) { question in
+                    QuestionView(question: question)
+                }
             }
             .frame(maxWidth: 600)
             .navigationTitle("FAQ")

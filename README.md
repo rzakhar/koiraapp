@@ -12,6 +12,7 @@
 * The app uses BlurHash algorythm (by Wolt) to smooth the experience when the internet is slow 
 * Dark mode is fully supported
 * iPads are supported
+* You can see different dogs in the AR using Google integration
 * The backend runs on Ruby. [Repository is here](https://github.com/floriandejonckheere/koiraapp-server)
 
 

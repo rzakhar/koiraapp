@@ -15,6 +15,7 @@ struct HomeView: View {
             ScrollView(showsIndicators: false) {
                 Text("Welcome to the Dog world")
                     .font(.title3)
+                    .padding()
 
                 MediumTile(title: "Dogs at Therapy?", imageName: "DogTherapy")
                     .onTapGesture {
