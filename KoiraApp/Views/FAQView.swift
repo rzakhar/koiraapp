@@ -23,6 +23,7 @@ struct FAQView: View {
                             .font(.title2)
                     }
                     .padding()
+                    Divider()
                 }
                 ForEach(questionModel.questions) { question in
                     QuestionView(question: question)
